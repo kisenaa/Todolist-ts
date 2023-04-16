@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "LICENSE": true,
+    "postcss.config.js": true,
+    "README.md": true,
+    "vite.config.ts": true,
+    "tsconfig.json": true,
+    "tailwind.config.js": true
+  },
+  "hide-files.files": [
+    "LICENSE",
+    "postcss.config.js",
+    "README.md",
+    "vite.config.ts",
+    "tsconfig.json",
+    "tailwind.config.js"
+  ]
+}

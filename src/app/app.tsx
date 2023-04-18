@@ -2,12 +2,12 @@ import "./app.css";
 import { useState, useEffect } from "react";
 import Switch from "react-switch";
 import { BsSunFill, BsFillMoonStarsFill } from "react-icons/bs";
-import TaskContainer from "components/TaskContainer";
+import TaskContainer from "../components/TaskContainer";
 
 type Task = {
-  completed: boolean;
   title: string;
   description: string;
+  completed: boolean;
   id: string;
 };
 
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="app-title-container">
-        <h1 className="app-title">ToDo App</h1>
+        <h1 className="app-title">To Do List</h1>
       </div>
       <Switch
         checked={dark}

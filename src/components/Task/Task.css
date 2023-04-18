@@ -2,7 +2,7 @@
   display: flex;
   text-align: left;
   min-width: 250px;
-  flex: 1 0 21%;
+  flex: 1 0 40%;
   margin: 5px;
   border-radius: 8px;
   justify-content: space-between;
@@ -61,16 +61,6 @@
 .task-remove:hover {
   color: #fff;
   background-color: #ce2727;
-}
-
-.darkMode-task-remove {
-  color: #fc2222;
-  background-color: #e0e0e09a;
-}
-
-.darkMode-task-remove:hover {
-  color: #e0e0e0;
-  background-color: #f8000085;
 }
 
 /* / Making responsive / */

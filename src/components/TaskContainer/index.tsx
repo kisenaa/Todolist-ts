@@ -5,17 +5,17 @@ import "./TaskContainer.css";
 
 type TaskProps = {
   tasks: {
-    completed: boolean;
     title: string;
     description: string;
+    completed: boolean;
     id: string;
   }[];
   setTasks: React.Dispatch<
     React.SetStateAction<
       {
-        completed: boolean;
         title: string;
         description: string;
+        completed: boolean;
         id: string;
       }[]
     >
@@ -25,9 +25,9 @@ type TaskProps = {
 
 const TaskContainer = ({ tasks, setTasks, dark }: TaskProps) => {
   const [todo, setTodo] = useState({
-    completed: false,
     title: "",
     description: "",
+    completed: false,
     id: "",
   });
 
@@ -42,8 +42,7 @@ const TaskContainer = ({ tasks, setTasks, dark }: TaskProps) => {
       const randomNumber = Math.floor(Math.random() * 500) + 1;
       todo.id = await run(todo.title + todo.description + randomNumber);
 
-      const newTask = { ...todo };
-      const newTasks = [...tasks, newTask];
+      const newTasks = [...tasks, { ...todo }];
       setTasks(newTasks);
       setTodo({ title: "", description: "", completed: false, id: "" });
       localStorage.setItem("myTodoTasks", JSON.stringify(newTasks));

@@ -1,26 +1,26 @@
 import React from "react";
-import "./task.css";
+import "./Task.css";
 import { MdCancel, MdOutlineTaskAlt } from "react-icons/md";
 
 type TaskProps = {
   task: {
-    completed: boolean;
     title: string;
     description: string;
+    completed: boolean;
     id: string;
   };
   tasks: {
-    completed: boolean;
     title: string;
     description: string;
+    completed: boolean;
     id: string;
   }[];
   setTasks: React.Dispatch<
     React.SetStateAction<
       {
-        completed: boolean;
         title: string;
         description: string;
+        completed: boolean;
         id: string;
       }[]
     >

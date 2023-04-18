@@ -9,19 +9,19 @@
   text-align: center;
   width: 100vw;
   min-height: 100vh;
-  padding-top: 55px;
+  padding-top: 45px;
   background-color: antiquewhite;
 }
 
 .app-title-container {
-  padding: 25px;
-  margin-bottom: 15px;
+  padding: 22px;
+  margin-bottom: 28px;
   background-color: #ffe4c4;
 }
 
 .app-title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 35px;
 }
 
 .sun-btn,

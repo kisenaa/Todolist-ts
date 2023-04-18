@@ -4,4 +4,5 @@ module.exports = {
     "eslint . --cache --fix --ext .tsx --ext .ts",
     () => "pnpm tsc",
   ],
+  "*.css": ["stylelint . --fix"],
 };

@@ -10,18 +10,7 @@
 ### Clone to local
 
 ```bash
-npx degit jvidalv/vital my-vital-app
-cd my-vital-app
+npx degit kisenaa/todolist-ts
+cd todolist-ts
 yarn # npm install (for npm) and pnpm install (for pnpm)
 ```
-
-## Checklist
-
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Rename `name` and `author` fields in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
-- [ ] Change the favicon in `public`
-- [ ] Modify the manifest in `public`
-- [ ] Clean up the README's

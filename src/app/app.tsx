@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="app-title-container">
-        <h1 className="app-title">To Dos List</h1>
+        <h1 className="app-title">To Do List</h1>
       </div>
       <Switch
         checked={dark}

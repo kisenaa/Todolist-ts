@@ -71,30 +71,7 @@ jobs:
         with:
           name: coverage
           path: src/coverage/lcov.info
-
-  coverage:
-    name: Coverage analysis
-    needs: buildAndTest
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ env.GITHUB_TOKEN }}
-
-      # Donwload coverage artifacts
-      - uses: actions/download-artifact@v3
-        with:
-          name: coverage
-
-      # Update coverage file to codecov
-      - name: CODECOV
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: lcov.info
-
+          
   # Deploy to gh pages
   deploy:
     name: Deploy

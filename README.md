@@ -1,7 +1,6 @@
 <div align="center">
 
-[![ci](https://github.com/kisenaa/template-pnpm/actions/workflows/ci-pnpm.yml/badge.svg?branch=main)](https://github.com/kisenaa/template-pnpm/actions)
-[![codecov.io](https://codecov.io/github/kisenaa/template-pnpm/coverage.svg?branch=main)](https://codecov.io/gh/kisenaa/template-pnpm?branch=master)
+[![ci](https://github.com/kisenaa/todolist-ts/actions/workflows/ci-pnpm.yml/badge.svg?branch=main)](https://github.com/kisenaa/todolist-ts/actions)
 
 # React v18 , vite, tailwind css, github actions
 

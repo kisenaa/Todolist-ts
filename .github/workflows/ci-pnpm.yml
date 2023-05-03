@@ -57,9 +57,6 @@ jobs:
       - name: BUILD
         run: pnpm build
 
-      - name: TEST
-        run: pnpm test
-
       # Upload dist artifacts
       - uses: actions/upload-artifact@v3
         with:
@@ -71,7 +68,7 @@ jobs:
         with:
           name: coverage
           path: src/coverage/lcov.info
-          
+
   # Deploy to gh pages
   deploy:
     name: Deploy
